@@ -1,0 +1,54 @@
+Interface
+
+package br.unipar.interfaceAnimais;
+
+public interface Animais {
+    public String emitirSom();
+    public void correr();
+    public void Alimentacao();
+}
+
+
+classes:
+
+package br.unipar.teste;
+
+import br.unipar.interfaceAnimais.Animais;
+
+public class Cachorro implements Animais {
+
+    @Override
+    public String emitirSom() {
+        return "AUAUAUAUAAU";
+    }
+
+    @Override
+    public void correr() {
+        Integer velocidade = 10;
+
+    }
+}
+
+package br.unipar.teste;
+
+import br.unipar.interfaceAnimais.Animais;
+
+public class Gato implements Animais {
+    @Override
+    public String emitirSom() {
+        return "miaumiau";
+    }
+
+    @Override
+    public void correr() {
+
+    }
+
+    @Override
+    public void Alimentacao() {
+
+    }
+}
+
+
+
